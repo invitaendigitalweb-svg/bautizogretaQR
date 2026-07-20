@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Fotos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .imagen {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .imagen-portada {
+            margin-bottom: 30px;
+        }
+
+        /* Estilo para el botón convertído en enlace (<a>) */
+        .boton-rosa {
+            background-color: #ffb6c1;
+            color: #ffffff;
+            border: none;
+            padding: 18px 60px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 80%;
+            max-width: 400px;
+            margin-bottom: 40px;
+            text-decoration: none; /* Quita el subrayado del enlace */
+            display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .boton-rosa:hover {
+            background-color: #ff9eaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <!-- Primera foto: portada.jpg -->
+        <img src="portada.jpg" alt="Portada" class="imagen imagen-portada">
+
+        <!-- Botón rosita pastel con enlace incorporado -->
+        <a href="https://weduploader.com/upload/jzCboX74QXu5j21H" target="_blank" class="boton-rosa">Subir fotos</a>
+
+        <!-- Segunda foto: texto.jpg -->
+        <img src="texto.jpg" alt="Texto" class="imagen">
+    </div>
+
+</body>
+</html>
